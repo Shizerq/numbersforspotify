@@ -68,9 +68,9 @@ export const Genres: React.FC = () => {
   const config = {
     hasYAxisBackgroundLines: false,
     xAxisLabelStyle: {
-      width: 105,
+      width: 135,
       fontSize: 12,
-      xOffset: -35,
+      xOffset: -50,
       color: "#ffffff",
     },
     hasYAxisLabels: false,
@@ -82,6 +82,7 @@ export const Genres: React.FC = () => {
         <Loading />
       </Styled.Background>
     );
+
   return (
     <Styled.Background>
       <Periods setActive={setActive} active={active} labels={periods}>
@@ -94,8 +95,8 @@ export const Genres: React.FC = () => {
                 Your top genre is {Object.keys(genres)[0]}
               </Styled.Title>
               <HorizontalBarGraph
-                data={Object.values(genres).slice(0, 10)}
-                labels={Object.keys(genres).slice(0, 10)}
+                data={Object.values(genres).slice(0, 15)}
+                labels={Object.keys(genres).slice(0, 15)}
                 width={Dimensions.get("window").width * 0.9}
                 height={Dimensions.get("window").height * 0.6}
                 barRadius={5}
