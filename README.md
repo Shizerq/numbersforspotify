@@ -10,6 +10,8 @@
 ## To do
 - [ ] Add top artists/songs collage generator
 - [ ] Add i18n and Polish language support
+- [ ] Fix left TypeScript errors/warnings
+- [ ] Create a splashart and an icon
 
 ## Bug reporting, contributing
 If you have found any bug, or would like to contribute to the project, feel free to open an issue or create a PR.
