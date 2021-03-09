@@ -60,5 +60,5 @@
     "prettier": "^2.2.1",
     "typescript": "~3.9.5"
   },
-  "private": true
+  "private": false
 }
