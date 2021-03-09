@@ -8,7 +8,7 @@
   ],
   "plugins": ["@typescript-eslint", "react", "prettier"],
   "parser": "@typescript-eslint/parser",
-  "ignorePatterns": ["**/server/*.js"],
+  "ignorePatterns": ["**/server/*.js", "**/babel.config.js"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
