@@ -1,0 +1,31 @@
+{
+  "login": {
+    "text": "Śledź swoich top artystów i utwory",
+    "signIn": "Zaloguj się przez Spotify"
+  },
+
+  "periods": {
+    "allTime": "Wszystko",
+    "lastWeeks": "Ostatnie 4 tyg.",
+    "lastMonths": "Ostatnie 6 mies."
+  },
+
+  "details": {
+    "followers": "Obserwujący",
+    "popularity": "Popularność",
+    "relatedArtists": "Podobni artyści",
+    "artists": "Artyści",
+    "album": "Album",
+    "playonspotify": "Odtwórz w Spotify"
+  },
+
+  "genres": {
+    "title": "Twój top gatunek to"
+  },
+
+  "screens": {
+    "topArtists": "Top Artyści",
+    "topSongs": "Top Utwory",
+    "genres": "Gatunki"
+  }
+}

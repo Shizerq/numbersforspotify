@@ -17,6 +17,8 @@ import Back from "../components/Back";
 import LogOut from "../components/LogOut";
 import { ArtistObjectSimplified } from "../types/spotify-web-api-js";
 
+import i18n from "../translations";
+
 export type Params = {
   Details: {
     type: "artist" | "track";
@@ -77,7 +79,7 @@ export const TopArtistsScreen: React.FC = () => {
         options={{
           ...bigHeader,
           ...headerLogOut,
-          title: "Top Artists",
+          title: i18n.t("screens.topArtists"),
         }}
       />
     </TopArtistsStack.Navigator>
@@ -93,7 +95,7 @@ export const TopSongsScreen: React.FC = () => {
         options={{
           ...bigHeader,
           ...headerLogOut,
-          title: "Top Songs",
+          title: i18n.t("screens.topSongs"),
         }}
       />
     </TopSongsStack.Navigator>
@@ -109,6 +111,7 @@ export const GenresScreen: React.FC = () => {
         options={{
           ...bigHeader,
           ...headerLogOut,
+          title: i18n.t("screens.genres"),
         }}
       />
     </GenresStack.Navigator>
@@ -127,7 +130,7 @@ export const App: React.FC = () => {
         name="TopArtists"
         component={TopArtistsScreen}
         options={{
-          title: "Top Artists",
+          title: i18n.t("screens.topArtists"),
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="artist" color={color} size={30} />
           ),
@@ -137,7 +140,7 @@ export const App: React.FC = () => {
         name="TopSongs"
         component={TopSongsScreen}
         options={{
-          title: "Top Songs",
+          title: i18n.t("screens.topSongs"),
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="music" color={color} size={25} />
           ),
@@ -147,7 +150,7 @@ export const App: React.FC = () => {
         name="Genres"
         component={GenresScreen}
         options={{
-          title: "Genres",
+          title: i18n.t("screens.genres"),
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="chart-bar" color={color} size={25} />
           ),

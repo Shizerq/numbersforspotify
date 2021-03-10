@@ -9,6 +9,8 @@ import API from "../../api";
 import Periods from "../../components/Periods";
 import Loading from "../../components/Loading";
 
+import i18n from "../../translations";
+
 import * as Styled from "./index.styled";
 
 export const Genres: React.FC = () => {
@@ -20,12 +22,16 @@ export const Genres: React.FC = () => {
     [name: string]: number;
   }
 
-  const periods = ["All time", "Last 4 weeks", "Last 6 months"];
+  const periods = [
+    i18n.t("periods.allTime"),
+    i18n.t("periods.lastWeeks"),
+    i18n.t("periods.lastMonths"),
+  ];
 
   const currentPeriod: currentPeriod = {
-    "All time": "long_term",
-    "Last 4 weeks": "short_term",
-    "Last 6 months": "medium_term",
+    [i18n.t("periods.allTime")]: "long_term",
+    [i18n.t("periods.lastWeeks")]: "short_term",
+    [i18n.t("periods.lastMonths")]: "medium_term",
   };
 
   const [active, setActive] = React.useState<string>(periods[0]);
@@ -92,7 +98,7 @@ export const Genres: React.FC = () => {
           genres && (
             <>
               <Styled.Title>
-                Your top genre is {Object.keys(genres)[0]}
+                {i18n.t("genres.title")} {Object.keys(genres)[0]}
               </Styled.Title>
               <HorizontalBarGraph
                 data={Object.values(genres).slice(0, 15)}

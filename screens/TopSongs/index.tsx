@@ -11,6 +11,8 @@ import ChartItem from "../../components/ChartItem";
 import Periods from "../../components/Periods";
 import Loading from "../../components/Loading";
 
+import i18n from "../../translations";
+
 import * as Styled from "./index.styled";
 
 export const TopSongs: React.FC = () => {
@@ -20,12 +22,16 @@ export const TopSongs: React.FC = () => {
 
   const navigation = useNavigation();
 
-  const periods = ["All time", "Last 4 weeks", "Last 6 months"];
+  const periods = [
+    i18n.t("periods.allTime"),
+    i18n.t("periods.lastWeeks"),
+    i18n.t("periods.lastMonths"),
+  ];
 
   const currentPeriod: currentPeriod = {
-    "All time": "long_term",
-    "Last 4 weeks": "short_term",
-    "Last 6 months": "medium_term",
+    [i18n.t("periods.allTime")]: "long_term",
+    [i18n.t("periods.lastWeeks")]: "short_term",
+    [i18n.t("periods.lastMonths")]: "medium_term",
   };
 
   const [active, setActive] = React.useState<string>(periods[0]);

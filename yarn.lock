@@ -3120,6 +3120,11 @@
     "@types/react" "*"
     hoist-non-react-statics "^3.3.0"
 
+"@types/i18n-js@^3.8.0":
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/@types/i18n-js/-/i18n-js-3.8.0.tgz#686d0a5c39fd6b6e45c4c5d1341fac8d52f1781f"
+  integrity sha512-0Hfr0sCpeP38C3xMqbaxgeJmFx99GCqKYyiKCtIIxa3tmFHwS94vcAwynLk+uDauRPPHMq/swA8z78fR8YIb+Q==
+
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.3.tgz#4ba8ddb720221f432e443bd5f9117fd22cfd4762"
@@ -5850,6 +5855,13 @@ expo-linking@~2.1.0:
     qs "^6.5.0"
     url-parse "^1.4.4"
 
+expo-localization@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/expo-localization/-/expo-localization-10.0.0.tgz#e819fb2d999a6d6e57bd8e85f1abd70c8f925833"
+  integrity sha512-xCLEwJ0TCrlIzzE/udji3zXWAwRR9CKc75u02Umzj0t9MLm1ALlrote+Tb3lPN5IsoLBCK/F8n56lpWwE9U0Tg==
+  dependencies:
+    rtl-detect "^1.0.2"
+
 expo-location@~9.0.0:
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-9.0.1.tgz#adf93b8adf5e9dcf9570cba1d66c8e3831329156"
@@ -6664,6 +6676,11 @@ hyphenate-style-name@^1.0.2, hyphenate-style-name@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
   integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
+
+i18n-js@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/i18n-js/-/i18n-js-3.8.0.tgz#b8fd6b12e1d88cb71f9806c29bca7c31c012e504"
+  integrity sha512-hDsGgPuvw/2P+lXSbOafAwspK8Ste8YrwuuUg17W3wEcO1JkQxBlPgsN1t2+852nTnz4YSYTjZc/1nAA2PC/nw==
 
 iconv-lite@0.4.24, iconv-lite@^0.4.17:
   version "0.4.24"
@@ -10728,6 +10745,11 @@ rsvp@^4.8.4:
   version "4.8.5"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-4.8.5.tgz#c8f155311d167f68f21e168df71ec5b083113734"
   integrity sha512-nfMOlASu9OnRJo1mbEk2cz0D56a1MBNrJ7orjRZQG10XDyuvwksKbuXNp6qa+kbn839HwjwhBzhFmdsaEAfauA==
+
+rtl-detect@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/rtl-detect/-/rtl-detect-1.0.2.tgz#8eca316f5c6563d54df4e406171dd7819adda67f"
+  integrity sha512-5X1422hvphzg2a/bo4tIDbjFjbJUOaPZwqE6dnyyxqwFqfR+tBcvfqapJr0o0VygATVCGKiODEewhZtKF+90AA==
 
 run-async@^2.2.0:
   version "2.4.1"

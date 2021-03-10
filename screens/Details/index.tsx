@@ -12,6 +12,8 @@ import Genre from "../../components/Genre";
 import Loading from "../../components/Loading";
 import RelatedArtist from "../../components/RelatedArtist";
 
+import i18n from "../../translations";
+
 import * as Styled from "./index.styled";
 
 interface Props {
@@ -60,11 +62,12 @@ export const Details: React.FC<Props> = ({ route }) => {
         <DetailsImage title={title} image={image} />
         <Styled.DataContainer>
           <Styled.Text>
-            <Styled.Title>Followers: </Styled.Title>
+            <Styled.Title>{i18n.t("details.followers")}: </Styled.Title>
             {followers.toLocaleString()}
           </Styled.Text>
           <Styled.Text>
-            <Styled.Title>Popularity: </Styled.Title> {popularity}
+            <Styled.Title>{i18n.t("details.popularity")}: </Styled.Title>{" "}
+            {popularity}
           </Styled.Text>
           <Styled.Genres>
             {genres.map((genre: string) => (
@@ -79,7 +82,9 @@ export const Details: React.FC<Props> = ({ route }) => {
           </Styled.LoadingContainer>
         ) : (
           <>
-            <Styled.SectionTitle>Related artists</Styled.SectionTitle>
+            <Styled.SectionTitle>
+              {i18n.t("details.relatedArtists")}
+            </Styled.SectionTitle>
             <FlatList
               horizontal
               style={{ marginTop: "5%" }}
@@ -106,22 +111,22 @@ export const Details: React.FC<Props> = ({ route }) => {
       <DetailsImage title={title} image={image} />
       <Styled.DataContainer>
         <Styled.Text>
-          <Styled.Title>Artists: </Styled.Title>
+          <Styled.Title>{i18n.t("details.artists")}: </Styled.Title>
           {artists && artists.map(artist => `${artist.name} `)}
         </Styled.Text>
         <Styled.Text>
-          <Styled.Title>Album: </Styled.Title>
+          <Styled.Title>{i18n.t("details.album")}: </Styled.Title>
           {album}
         </Styled.Text>
         <Styled.Text>
-          <Styled.Title>Popularity: </Styled.Title>
+          <Styled.Title>{i18n.t("details.popularity")}: </Styled.Title>
           {popularity}
         </Styled.Text>
       </Styled.DataContainer>
 
       <Styled.PlayOnSpotify
         onPress={() => Linking.openURL(url)}
-        title="Play on Spotify"
+        title={i18n.t("details.playonspotify")}
       />
     </Styled.ContainerView>
   );

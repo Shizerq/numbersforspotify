@@ -15,6 +15,8 @@ import LoginGraphics from "../../assets/login.png";
 import URLs from "../../api/URLs";
 import { fetchToken, fetchSecret } from "../../api";
 
+import i18n from "../../translations";
+
 import * as Styled from "./index.styled";
 
 export const USE_PROXY = Platform.select({
@@ -80,10 +82,10 @@ export const Login: React.FC = () => {
   return (
     <Styled.Background>
       <Styled.Container>
-        <Styled.Title>Track your top artists and tracks</Styled.Title>
+        <Styled.Title>{i18n.t("login.text")}</Styled.Title>
         <Styled.Image source={LoginGraphics} resizeMode="contain" />
         <Button
-          title="Sign in with Spotify"
+          title={i18n.t("login.button")}
           onPress={() => promptAsync({ useProxy: USE_PROXY })}
         />
       </Styled.Container>

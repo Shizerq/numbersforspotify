@@ -1,0 +1,31 @@
+{
+  "login": {
+    "text": "Track your top artists and tracks",
+    "button": "Sign in with Spotify"
+  },
+
+  "periods": {
+    "allTime": "All time",
+    "lastWeeks": "Last 4 weeks",
+    "lastMonths": "Last 6 months"
+  },
+
+  "details": {
+    "followers": "Followers",
+    "popularity": "Popularity",
+    "relatedArtists": "Related artists",
+    "artists": "Artists",
+    "album": "Album",
+    "playonspotify": "Play on Spotify"
+  },
+
+  "genres": {
+    "title": "Your top genre is"
+  },
+
+  "screens": {
+    "topArtists": "Top Artists",
+    "topSongs": "Top Songs",
+    "genres": "Genres"
+  }
+}
