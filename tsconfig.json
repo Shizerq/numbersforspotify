@@ -8,6 +8,7 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "strict": true,
-    "typeRoots": [ "./types" ]
+    "typeRoots": [ "./types" ],
+    "types": ["@types/jest"],
   }
 }
