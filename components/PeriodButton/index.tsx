@@ -17,8 +17,10 @@ export const PeriodButton: React.FC<PeriodButtonProps> = ({
   return (
     <Styled.Container>
       <TouchableOpacity onPress={onPress}>
-        <Styled.Text active={active}>{title}</Styled.Text>
-        {active && <Styled.Line />}
+        <Styled.Text testID="text" active={active}>
+          {title}
+        </Styled.Text>
+        {active && <Styled.Line testID="active-line" />}
       </TouchableOpacity>
     </Styled.Container>
   );
