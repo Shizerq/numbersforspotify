@@ -9,9 +9,9 @@
 
 ## To do
 - [ ] Add top artists/songs collage generator
-- [ ] Add i18n and Polish language support
 - [ ] Fix left TypeScript errors/warnings
-- [ ] Create a splashart and an icon
+- [x] Add i18n and Polish language support
+- [x] Create a splashart and an icon
 
 ## Bug reporting, contributing
 If you have found any bug, or would like to contribute to the project, feel free to open an issue or create a PR.
@@ -20,11 +20,10 @@ If you have found any bug, or would like to contribute to the project, feel free
 
 ### Prerequisites
 
-Create an app in Spotify's Web API dashboard, add your redirect URI (You can check out the Expo documentation <a href="https://docs.expo.io/guides/authentication/#spotify">here</a>.
+Create an app in Spotify's Web API dashboard and add your redirect URI (You can check out the Expo documentation <a href="https://docs.expo.io/guides/authentication/#spotify">here</a>).
 
-Run the ```/api/spotify-credentials``` endpoint. You can find out the neccesarry files in ```./server```. 
-You should put your ClientId and ClientSecret in a ```.env``` file.
-The only needed dependency is Express.
+Run the ```/api/spotify-credentials``` endpoint. To do this, you have to install the dependencies ```yarn install```, put your Spotify ClientId and ClientSecret in a ```.env``` file, and then deploy it or run locally (```yarn start```).
+You can find the necessary files in the ```./server``` folder. 
 
 ### Install project dependencies
 
