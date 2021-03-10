@@ -7,6 +7,7 @@ interface PeriodButtonProps {
   onPress: () => void;
   title: string;
   active: boolean;
+  testID?: string;
 }
 
 export const PeriodButton: React.FC<PeriodButtonProps> = ({

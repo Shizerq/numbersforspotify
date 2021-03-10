@@ -8,7 +8,9 @@ interface Props {
   children: React.ReactChild;
   labels: string[];
   active: string;
-  setActive: React.Dispatch<React.SetStateAction<string>>;
+  setActive: (
+    value: string,
+  ) => void | React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const Periods: React.FC<Props> = ({
@@ -47,6 +49,7 @@ export const Periods: React.FC<Props> = ({
                 active={isActive}
                 title={label}
                 onPress={() => setActive(label)}
+                testID={label}
               />
             );
           })}
