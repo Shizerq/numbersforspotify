@@ -132,7 +132,11 @@ export const App: React.FC = () => {
         options={{
           title: i18n.t("screens.topArtists"),
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="artist" color={color} size={30} />
+            <MaterialCommunityIcons
+              name="account-music"
+              color={color}
+              size={30}
+            />
           ),
         }}
       />
